@@ -1,2 +1,7 @@
-let arry=[1,2,3,4];
-console.log(arry[3]);
+// Creating a function for sum 2 number.
+
+function sum (a, b){
+    return a + b;
+  }
+  console.log(sum(15, 25))
+   
