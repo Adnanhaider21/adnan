@@ -1,7 +1,14 @@
-// Creating a function for sum 2 number.
+//Find Repeated element
+let num = ["one", "two", "one", "nine", "one", "four"];
+let repeatedElements = [];
 
-function sum (a, b){
-  return a + b;
+for (let i = 0; i < num.length; i++) {
+    for (let j = i + 1; j < num.length; j++) {
+        if (num[i] === num[j] && !repeatedElements.includes(num[i])) {
+            repeatedElements.push(num[i]);
+            break; // Once a repeated element is found, move to the next element
+        }
+    }
 }
-console.log(sum(15, 25))
+console.log(repeatedElements)
  
